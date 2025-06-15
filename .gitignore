@@ -174,9 +174,9 @@ cython_debug/
 .abstra/
 
 # Visual Studio Code
-#  Visual Studio Code specific template is maintained in a separate VisualStudioCode.gitignore 
+#  Visual Studio Code specific template is maintained in a separate VisualStudioCode.gitignore
 #  that can be found at https://github.com/github/gitignore/blob/main/Global/VisualStudioCode.gitignore
-#  and can be added to the global gitignore or merged into this file. However, if you prefer, 
+#  and can be added to the global gitignore or merged into this file. However, if you prefer,
 #  you could uncomment the following to ignore the enitre vscode folder
 # .vscode/
 
@@ -192,3 +192,161 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+
+# === GENERAL IGNORE ===
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+*.lock
+
+# === PYTHON / DJANGO / FASTAPI ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+pip-log.txt
+pip-delete-this-directory.txt
+*.manifest
+*.spec
+htmlcov/
+.tox/
+.nox/
+.coverage
+.cache
+.coverage.*
+.pytest_cache/
+.hypothesis/
+.pybuilder/
+.pyre/
+.pytype/
+cython_debug/
+.pyc
+env/
+.venv/
+venv/
+ENV/
+env.bak/
+venv.bak/
+db.sqlite3
+db.sqlite3-journal
+local_settings.py
+celerybeat-schedule
+celerybeat.pid
+
+# === JUPYTER / NOTEBOOKS ===
+.ipynb_checkpoints
+
+# === NODE.JS / EXPRESS / WEB SOCKET ===
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+package-lock.json
+.pnpm-debug.log
+
+# === CPP / TRADE ENGINE ===
+*.out
+*.o
+*.obj
+*.exe
+*.dll
+*.a
+*.so
+*.dSYM/
+*.gcda
+*.gcno
+*.gcov
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+build/
+
+# === DATABASE DUMPS / MIGRATIONS ===
+*.sqlite
+*.sqlite3
+*.db
+*.sql
+*.dump
+*.rdb
+
+# === MYSQL / MONGODB / TIMESCALEDB ===
+*.pid
+*.sock
+*.err
+*.ibd
+*.frm
+*.MYI
+*.MYD
+dump.rdb
+mongod.lock
+
+# === KAFKA ===
+kafka-logs/
+zookeeper-logs/
+*.kafka
+
+# === IDEs ===
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+*.code-workspace
+*.iml
+
+# === ENVIRONMENT VARIABLES ===
+.env
+.env.*
+*.env
+*.secrets
+
+# === DOCKER / CONTAINERS ===
+*.tar
+.docker/
+docker-compose.override.yml
+docker-compose.dev.yml
+
+# === CI/CD ===
+coverage/
+.nyc_output/
+*.lcov
+*.lcov.info
+
+# === ARTIFACTS / DOCS ===
+docs/_build/
+site/
+
+# === PACKAGE MANAGERS ===
+.pdm.toml
+.pdm-python
+.pdm-build/
+.poetry.lock
+.uv/
+.uv.lock
+Pipfile.lock
+__pypackages__/
+
+# === CACHE / TEMP FILES ===
+.cache/
+.mypy_cache/
+.ruff_cache/
+.dmypy.json
+dmypy.json
+.nyc_output/
+coverage.xml
+nosetests.xml
+
+# === CURSOR / AI EDITORS ===
+.cursorignore
+.cursorindexingignore
+
+# === ABSTRA ===
+.abstra/
